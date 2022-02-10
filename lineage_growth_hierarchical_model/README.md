@@ -11,10 +11,10 @@ We constructed a hierarchical Bayesian statistical model to represent the relati
 ![softmax(\bm{x}) = \frac{exp(\bm{x})}{\sum_{i} exp(\bm{x_i})}](https://latex.codecogs.com/gif.latex?softmax(\bm{x}) = \frac{exp(\bm{x})}{\sum_{i} exp(\bm{x_i})})  
 
 
-![\bm{r_{lc}} = exp(\gamma \bm{\beta_{lc}})](https://latex.codecogs.com/gif.latex?\bm{r_{lc}} = exp(\gamma \bm{\beta_{lc}}))  
+![\bm{r_{lc}}=exp(\gamma\bm{\beta_{lc}})](https://latex.codecogs.com/gif.latex?\bm{r_{lc}}=exp(\gamma\bm{\beta_{lc}}))  
 
 
-![\bm{r_{l}} = exp(\gamma \bm{\beta_{l}})](https://latex.codecogs.com/gif.latex?\bm{r_{l}} = exp(\gamma \bm{\beta_{l}}))  
+![\bm{r_{l}}=exp(\gamma\bm{\beta_{l}})](https://latex.codecogs.com/gif.latex?\bm{r_{l}}=exp(\gamma\bm{\beta_{l}}))  
 
 
 
