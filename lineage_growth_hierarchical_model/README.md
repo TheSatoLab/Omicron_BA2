@@ -8,7 +8,7 @@ We constructed a hierarchical Bayesian statistical model to represent the relati
 ![\bm{\theta_{.ct}}=softmax(\bm{\mu_{.ct}})](https://latex.codecogs.com/gif.latex?\bm{\theta_{.ct}}=softmax(\bm{\mu_{.ct}}))  
 ![\bm{y_{lct}}\simMultinomial(\sum_{l}\bm{y_{lct}},\bm{\theta_{.ct}})](https://latex.codecogs.com/gif.latex?\bm{y_{lct}}\simMultinomial(\sum_{l}\bm{y_{lct}},\bm{\theta_{.ct}}))  
 
-![softmax(\bm{x}) = \frac{exp(\bm{x})}{\sum_{i} exp(\bm{x_i})}](https://latex.codecogs.com/gif.latex?softmax(\bm{x}) = \frac{exp(\bm{x})}{\sum_{i} exp(\bm{x_i})})  
+![softmax(\bm{x}) = \frac{exp(\bm{x})}{\sum_{i} exp(\bm{x_i})}](https://latex.codecogs.com/gif.latex?softmax(\bm{x})=\frac{exp(\bm{x})}{\sum_{i}exp(\bm{x_i})})  
 
 
 ![\bm{r_{lc}}=exp(\gamma\bm{\beta_{lc}})](https://latex.codecogs.com/gif.latex?\bm{r_{lc}}=exp(\gamma\bm{\beta_{lc}}))  
