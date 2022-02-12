@@ -5,17 +5,17 @@ library(cmdstanr)
 
 #model
 stan_f.name <- 'script/multinomial_hierarchical.stan'
-multi_nomial_model <- cmdstan_model(stan_f.name)
+model <- cmdstan_model(stan_f.name)
 
+#given parameter
 generation_time <- 2.1
 
 data.stan <- readRDS('input/stan.input.list.rds')
 country.df <- read.table('input/country_Id.txt',header=T,sep="\t")
 
-group.df <- data.frame(group_Id = 1:4, group = colnames(data.stan$Y))
+group.df <- data.frame(group_Id = 1:ncol(data.stan$Y), group = colnames(data.stan$Y))
 
-
-fit.stan <- multi_nomial_model$sample(
+fit.stan <- model$sample(
     data=data.stan,
     iter_sampling=2000,
     iter_warmup=1000,
@@ -39,4 +39,5 @@ write.table(stat.info.mean.merged,out.name,col.names=T,row.names=F,sep="\t",quot
 out.name <- 'output/growth_rate.each_country.txt'
 write.table(stat.info.each.merged,out.name,col.names=T,row.names=F,sep="\t",quote=F)
 
-
+out.name <- 'output/mcmc_samples.rds'
+saveRDS(fit.stan, out.name)
