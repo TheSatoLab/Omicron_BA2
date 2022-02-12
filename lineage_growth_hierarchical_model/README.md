@@ -49,6 +49,25 @@ r_{l}=exp(\gamma\beta_{l})
 
 For the parameter estimation, the intercept and slope parameters of the BA.1 variant were fixed at 0. Consequently, the relative effective reproduction number of BA.1 was fixed at 1, and those of the respective lineages were estimated relative to that of BA.1.
 
+Parameter estimation was performed by MCMC implemented in CmdStan v2.28.1 (https://mc-stan.org) with cmdstanr v0.4.0 (https://mc-stan.org/cmdstanr/). Noninformative priors were set for all parameters. Four independent MCMC chains were run with 1,000 and 2,000 steps in the warmup and sampling iterations, respectively.
+
+## Contents
+* script
+	* **run_model.R:** main script
+	* **multinomial.hierarchical.stan:** stan model file
+* input
+	* **input.count_matrix.txt:** a count matrix representing the abundance of respective viral lineages (column) in respective time bins (row)
+
+* output
+	* **MCMC_samples.txt:** output file containing MCMC samples 
+	* **credible_interval.txt:** output file containing credible intervals
+
+## Dependencies
+* R (v4.1.2)
+* R packages:
+	* tidyverse (v1.3.1)
+	* cmdstanr (v0.4.0)
+* CmdStan (v2.28.1)
 
 
 
