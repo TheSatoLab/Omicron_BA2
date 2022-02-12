@@ -1,4 +1,4 @@
-# Bioinformatics and statistics analysis on the SARS-CoV-2 Omicron sublineage, BA.2 
+# Bioinformatics and statistics analysis on the SARS-CoV-2 Omicron sub-lineage, BA.2 
 
 ## Summary
 This repository contains computational codes used in *Yamasoba et al., 2022*.
