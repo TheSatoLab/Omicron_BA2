@@ -1,7 +1,7 @@
 # A Bayesian hierarchical model to represent the epidemic dynamics of SARS-CoV-2 lineages
 
 ## Summary
-We constructed a Bayesian hierarchical statistical model to represent the relative lineage growth dynamics with a multinomial logistic regression. This model is basically the same to the one used in [out previous study](https://www.nature.com/articles/s41586-022-04462-1 "Omicron paper"). However, in the present study, we incorporated a hierarchical structure into the slope parameter over time, which enable us to estimate the global average of the relative effective reproduction number of each viral lineage as well as that in each country. Arrays in the model index over one or more indices: viral lineages l; countries c; and days t.  
+We constructed a Bayesian hierarchical model to represent the relative lineage growth dynamics with a multinomial logistic regression. This model is basically the same to the one used in [out previous study](https://www.nature.com/articles/s41586-022-04462-1 "Omicron paper"). However, in the present study, we incorporated a hierarchical structure into the slope parameter over time, which enable us to estimate the global average of the relative effective reproduction number of each viral lineage as well as that in each country. Arrays in the model index over one or more indices: viral lineages l; countries c; and days t.  
 The model is:
 
 ![\begin{align*}
