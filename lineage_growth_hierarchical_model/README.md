@@ -47,6 +47,7 @@ r_{l}=exp(\gamma\beta_{l})
 \end{align*}
 ](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0Ar_%7Bl%7D%3Dexp%28%5Cgamma%5Cbeta_%7Bl%7D%29%0A%5Cend%7Balign%2A%7D%0A)
 
+For the parameter estimation, the intercept and slope parameters of the BA.1 variant were fixed at 0. Consequently, the relative effective reproduction number of BA.1 was fixed at 1, and those of the respective lineages were estimated relative to that of BA.1.
 
 
 
