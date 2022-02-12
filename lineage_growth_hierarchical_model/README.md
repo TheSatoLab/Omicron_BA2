@@ -61,7 +61,7 @@ Parameter estimation was performed by MCMC implemented in CmdStan v2.28.1 (https
 * output
 	* **mcmc_samples.rds:** an R object recording MCMC samples
 	* **growth_rate.mean.txt:** the global average of the relative effective reproduction number of each viral lineage
-	* **growth_rate.mean.txt:** the relative effective reproduction number of each viral lineage in each country
+	* **growth_rate.each_country.txt:** the relative effective reproduction number of each viral lineage in each country
 
 ## Dependencies
 * R (v4.1.2)
