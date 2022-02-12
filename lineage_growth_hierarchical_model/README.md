@@ -53,14 +53,15 @@ Parameter estimation was performed by MCMC implemented in CmdStan v2.28.1 (https
 
 ## Contents
 * script
-	* **run_model.R:** main script
-	* **multinomial.hierarchical.stan:** stan model file
+	* **lineage_growth.hierarchical_model.R:** main script
+	* **multinomial_hierarchical.stan:** stan model file
 * input
-	* **input.count_matrix.txt:** a count matrix representing the abundance of respective viral lineages (column) in respective time bins (row)
-
+	* **country_Id.txt:** a table describing country name and Id
+	* **stan.input.list.rds:** an R list object containing input data
 * output
-	* **MCMC_samples.txt:** output file containing MCMC samples 
-	* **credible_interval.txt:** output file containing credible intervals
+	* **mcmc_samples.rds:** an R object recording MCMC samples
+	* **growth_rate.mean.txt:** the global average of the relative effective reproduction number of each viral lineage
+	* **growth_rate.mean.txt:** the relative effective reproduction number of each viral lineage in each country
 
 ## Dependencies
 * R (v4.1.2)
@@ -68,14 +69,4 @@ Parameter estimation was performed by MCMC implemented in CmdStan v2.28.1 (https
 	* tidyverse (v1.3.1)
 	* cmdstanr (v0.4.0)
 * CmdStan (v2.28.1)
-
-
-
-
-
-
-
-
-
-
 
